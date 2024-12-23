@@ -36,6 +36,7 @@ class Shoes(models.Model):
     def __str__(self):
         return self.brand
 
+
 class ShoesPhotos(models.Model):
     shoes = models.ForeignKey(Shoes, on_delete=models.CASCADE, related_name='photos')
     image = models.ImageField(upload_to='imades/')

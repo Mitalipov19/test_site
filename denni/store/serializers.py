@@ -27,6 +27,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
             'refresh': str(refresh),
         }
 
+
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(write_only=True)
